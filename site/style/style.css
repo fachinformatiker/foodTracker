@@ -1,0 +1,71 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: underline;
+	color: white;
+}
+
+#edit {
+	width: 20px;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+	display: block;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+	color: black;
+	cursor: pointer;
+}
+
+header {
+        height: 40px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+}
+
+main {
+	
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
