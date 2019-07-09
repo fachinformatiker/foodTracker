@@ -1,5 +1,6 @@
 <?php
-include 'db_connection.php';
+include("config/config.php");
+include("templates/$template/header.html");
 
 //echo "Connected Successfully";
 
@@ -18,4 +19,6 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
+
+include("templates/$template/footer.html");
 ?>

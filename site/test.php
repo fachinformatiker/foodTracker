@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="style/style.css">
-<script src="js/jquery-3.4.1.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="/js/html5shiv.js"></script>
-  <![endif]-->
-</head>
-<body>
+<?php
+include("config/config.php");
+include("templates/$template/header.html");
+?>
 
-<header>
-FoodTracker
-</header>
-
-<main>
 <div style="overflow-x:auto;">
 <table id="foodlist">
 <tr>
@@ -58,26 +46,8 @@ FoodTracker
       <td>67</td>
     </tr>
 </table>
-</div> 
-</main>
+</div>
 
-<footer>
-Created by: Patrick Szalewicz
-<br>
-Contact information: <a href="mailto:foodtracker@fachinformatiker.app">
-foodtracker@fachinformatiker.app</a>
-</footer>
-
-<script>
-$(document).ready(function() {
-    $('#example tr').click(function() {
-        var href = $(this).find("a").attr("href");
-        if(href) {
-            window.location = href;
-        }
-    });
-});
-</script>
-
-</body>
-</html>
+<?php
+include("templates/$template/footer.html");
+?>

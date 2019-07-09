@@ -1,7 +1,8 @@
 <?php
 // http://185.230.162.140/foodtracker/insert.php?Category=Fr%C3%BChst%C3%BCck&Name=Brot&Amount=3
 
-include 'db_connection.php';
+include("config/config.php");
+include("templates/$template/header.html");
 
 //echo "Connected Successfully";
 
@@ -40,4 +41,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+include("templates/$template/footer.html");
 ?>

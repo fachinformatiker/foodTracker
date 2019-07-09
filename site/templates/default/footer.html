@@ -1,0 +1,22 @@
+</main>
+
+<footer>
+Created by: Patrick Szalewicz
+<br>
+Contact information: <a href="mailto:foodtracker@fachinformatiker.app">
+foodtracker@fachinformatiker.app</a>
+</footer>
+
+<script>
+$(document).ready(function() {
+    $('#example tr').click(function() {
+        var href = $(this).find("a").attr("href");
+        if(href) {
+            window.location = href;
+        }
+    });
+});
+</script>
+
+</body>
+</html>
