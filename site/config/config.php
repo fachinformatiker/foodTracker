@@ -1,8 +1,8 @@
 <?php
 $template="default";
 $dbhost = "localhost";
-$dbuser = "USER";
-$dbpass = "PASS";
+$dbuser = "pszalewicz";
+$dbpass = "01020102..aA";
 $db = "foodtracker";
 
 //-----DO NOT EDIT BELOW THIS LINE!-----//
