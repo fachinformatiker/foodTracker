@@ -1,6 +1,5 @@
 <?php
-include("config/config.php");
-include("templates/$template/header.html");
+include("header.html");
 ?>
 
 <div style="overflow-x:auto;">
@@ -49,5 +48,5 @@ include("templates/$template/header.html");
 </div>
 
 <?php
-include("templates/$template/footer.html");
+include("footer.html");
 ?>

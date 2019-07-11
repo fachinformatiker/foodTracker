@@ -1,15 +1,7 @@
 <?php
-include("config/config.php");
-include("templates/$template/header.html");
+include("header.html");
 
-echo "Connected Successfully";
+include("api/edit.php");
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-
-//
-
-$conn->close();
-
-include("templates/$template/footer.html");
+include("footer.html");
 ?>
