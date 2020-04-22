@@ -21,7 +21,7 @@ if (isset($_POST["add"])) {
     unset($_POST["add"]);
     $data["food"] = array_values($data["food"]);
     array_push($data["food"], $_POST);
-    file_put_contents("storage.json", json_encode($data));
+    file_put_contents("storage.json", json_encode($data, JSON_PRETTY_PRINT));
     header("Location: index.php");
 }
 ?>
